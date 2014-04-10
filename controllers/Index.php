@@ -1,13 +1,12 @@
 <?php
-class Index
+class Index extends Controller
 {
 	
 	function __construct()
 	{
-
+		parent::__construct();
 	}
 	function index($ar){
-		echo "Metodo index ";
-		print_r($ar);
+		$this->view->render("index");
 	}
 }

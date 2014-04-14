@@ -7,6 +7,7 @@ class Startup
 		$controller = $request->getController();
 		$method 	= $request->getMethod(); 
 		$args 		= $request->getArgs();
+		// echo $controller;
 		if(!is_readable(CONTROLLERS.$controller.".php")){
 			echo "Error 404";
 			exit; # para evitar gasto de memoria ejecutando lo de abajo

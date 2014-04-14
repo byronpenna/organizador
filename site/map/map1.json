@@ -1,4 +1,5 @@
 {
+	"urlBase"		: "http://localhost/organizador/",
 	"title_page" 	: "Organizador",
 	"lang"			: "es"
 }

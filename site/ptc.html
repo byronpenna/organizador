@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pagina principal</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- STYLES -->
+		<link rel="stylesheet" type="text/css" href="site/css/bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="site/css/bootstrap/css/bootstrap-theme.css">	
+		<link rel="stylesheet" type="text/css" href="site/css/style.css">
+	<!-- SCRIPT -->
+		<script type="text/javascript" src="site/js/jquery-2.1.0.js"></script>
+</head>
+<body>
+	<!-- <div class="container"> -->
+		<h1 class="text-center">Bienvenido a la creacion de ptc</h1>
+		<div class="col-md-3">
+			<form role="form" method="POST">
+				<fieldset>
+					<h2 class="text-center">Ingresar ptc</h2>
+					<hr class="colorgraph">
+					<div class="form-group">
+						<label for="nombrePtc" class="control-label">Nombre:</label>
+						<input type="text" class="form-control" name="nombrePtc">
+					</div>
+					<div class="form-group">
+						<label for="pagoRefDirecto" class="control-label">Pago referido directo:</label>
+						<input type="number" class="form-control" name="pagoRefDirecto">
+					</div>
+					<div class="form-group">
+						<label for="pagoRefRentado" class="control-label">Pago referido rentado:</label>
+						<input type="number" class="form-control" name="pagoRefRentado">
+					</div>
+					<div class="form-group">
+						<label for="costoReciclaje">Costo reciclaje:</label>
+						<input type="number" class="form-control" name="costoReciclaje">
+					</div>
+					<div class="row">
+						<div class="col-lg-12">
+							<input type="submit" class="btn btn-lg btn-success btn-block" value="Ingresar">
+						</div>
+					</div>
+				</fieldset>
+			</form>	
+		</div>
+		<div class="col-md-9">
+			<table class="table">
+				<thead>
+					<th>Ptc</th>
+					<th>Pago directo</th>
+					<th>Pago rentado</th>
+					<th>Costo reciclaje</th>
+					<th>Ganancias</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Prueba</td>
+						<td>$0.005</td>
+						<td>$0.005</td>
+						<td>$0.07</td>
+						<td>$0.00</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		
+		
+	<!-- </div> -->
+
+</body>
+</html>

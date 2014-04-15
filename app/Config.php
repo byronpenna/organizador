@@ -1,4 +1,6 @@
 <?php 
+	//BASIC
+		define("FOLDER", "organizador/");
 	// DATA BASE INFO
 		define("DB_HOST","localhost");
 		define("DB_USER","root");

@@ -2,7 +2,7 @@
 class Login extends Controller
 {
 	function index(){
-		$this->view->render("main");
+		
 	}
 	function autentificar(){
 		$frm 		= $this->createPostObject();
@@ -10,7 +10,7 @@ class Login extends Controller
 		if($indexModel->login($frm)){
 			session_start(true);
 			$_SESSION['usuario'] = $frm->usuario;
-			$this->index();
+			header("Location: /".FOLDER."main");
 		}else{
 			echo "Error en el inicio de session";
 		}

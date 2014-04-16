@@ -6,7 +6,7 @@ class Login extends Controller
 	}
 	function autentificar(){
 		$frm 		= $this->createPostObject();
-		$indexModel = $this->loadModel("indexModel");
+		$indexModel = $this->loadModel("IndexModel");
 		if($indexModel->login($frm)){
 			session_start(true);
 			$_SESSION['usuario'] = $frm->usuario;

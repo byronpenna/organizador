@@ -7,4 +7,5 @@
 		require_once APP . "Config.php";
 		require_once APP . "View.php";
 		require_once APP . "Controller.php";
+		require_once APP . "Model.php";
 		require_once APP . "Sql.php";

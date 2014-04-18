@@ -10,12 +10,13 @@
 		<link rel="stylesheet" type="text/css" href="site/css/style.css">
 	<!-- SCRIPT -->
 		<script type="text/javascript" src="site/js/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="site/js/ptc.js"></script>
 </head>
 <body>
 	<!-- <div class="container"> -->
 		<h1 class="text-center">Bienvenido a la creacion de ptc</h1>
 		<div class="col-md-3">
-			<form role="form" method="POST">
+			<form role="form" method="POST" action="ptc/insert">
 				<fieldset>
 					<h2 class="text-center">Ingresar ptc</h2>
 					<hr class="colorgraph">
@@ -25,15 +26,15 @@
 					</div>
 					<div class="form-group">
 						<label for="pagoRefDirecto" class="control-label">Pago referido directo:</label>
-						<input type="number" class="form-control" name="pagoRefDirecto">
+						<input type="text" class="form-control" name="pagoRefDirecto">
 					</div>
 					<div class="form-group">
 						<label for="pagoRefRentado" class="control-label">Pago referido rentado:</label>
-						<input type="number" class="form-control" name="pagoRefRentado">
+						<input type="text" class="form-control" name="pagoRefRentado">
 					</div>
 					<div class="form-group">
 						<label for="costoReciclaje">Costo reciclaje:</label>
-						<input type="number" class="form-control" name="costoReciclaje">
+						<input type="text" class="form-control" name="costoReciclaje">
 					</div>
 					<div class="row">
 						<div class="col-lg-12">
@@ -51,6 +52,7 @@
 					<th>Pago rentado</th>
 					<th>Costo reciclaje</th>
 					<th>Ganancias</th>
+					<th>Acciones</th>
 				</thead>
 				<tbody>
 					{#table}

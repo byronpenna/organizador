@@ -1,16 +1,14 @@
 <?php 
-class IndexModel
+class IndexModel extends Model
 {
-	private $sql;
 	function __construct(){
-		$this->sql = new Sql();
+		parent::__construct();
 	}
 	function login($frm){
 		$consulta = "SELECT COUNT(*) AS validacion
 					FROM usuarios 
 					WHERE usuario = '".$frm->usuario."' and pass = MD5('".$frm->pass."')";
-		$this->sql->query 	= $consulta;
-		$reader 			= $this->sql->executeReader();
+		$reader 			= $this->getQuerySQL($consulta);
 		if ($reader[0]->validacion == 1) {
 			return true;
 		}else{

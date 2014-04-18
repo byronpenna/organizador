@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Pagina principal</title>
+	<title>Referidos</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- STYLES -->
@@ -12,15 +12,14 @@
 		<script type="text/javascript" src="site/js/jquery-2.1.0.js"></script>
 </head>
 <body>
-<ul>
-	<li>
-		<a href="ptc">Ptc</a>
-	</li>
-	<li>
-		<a href="referidos">Referidos</a>
-	</li>
-</ul>
-	
-	
+	<h1 class="text-center">Referidos</h1>
+	<form role="form" method="POST">
+		<div class="form-group">
+			<label class="control-label">Escoja la ptc</label>
+			<select>
+				{#cbPtc}
+			</select>
+		</div>
+	</form>
 </body>
 </html>
